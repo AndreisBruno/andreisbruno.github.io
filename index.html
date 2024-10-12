@@ -1,18 +1,175 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>Bruno Andreis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Andreis</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+    <main>
+    
 
+    <div class="header">
+        <div class="name">Bruno Andreis</div>
+        <div class="nav-links">
+            <a href=#pubs>Publications</a>
+            <a href="#contact">Contacts</a>
+        </div>
+    </div>
 
-<frameset rows="140,*" frameborder="0" framespacing="0">
+      <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="images/pic.JPG" alt="Profile Picture">
+            </div>
+            <div class="profile-text">
+	      <p>I am currently a PhD student at <a href="https://www.kaist.ac.kr/en/" target="_blank">KAIST</a> at the 
+	      <a href="https://gsai.kaist.ac.kr/" target="blank">Graduate School of AI</a> and supervised by 
+	      <a href="http://www.sungjuhwang.com/" target="_blank">Sung Ju Hwang</a>.
+		My reseach is mainly focused on deep learning and machine learning methods
+		for set structured data. Many problems in machine learing such as point cloud classification,
+		object segmentation, object-centric relation learning, feature and instance selection etc. can all be cast into the framework of 
+		set based machine learning. My goal is to develop efficient algorithms for processing such data and applying them to practical problems
+		in computer vision, reinforcement learning and natural language processing.
+	      </p>
+            </div>
+        </div>
+	</section>
+    
 
-	<frame name="top" src="header.html" frameborder="0" framespacing="0" scrolling="no">
+    <header>
+        <h1>Publications</h1>
+    </header>
 
-	!--<frame name="body" src="home.html" frameborder="0" framespacing="0" scrolling="auto">
+        <section id="pubs" class="publications">
+	<p> * := Equal Contribution</p>
+            <!-- Publication 1 -->
+            <div class="publication">
+                <div class="pub-image">
+                    <img src="images/sne.svg" alt="Publication 8">
+                </div>
+                <div class="pub-description">
+		    <a href="https://arxiv.org/abs/2305.16625" style="text-decoration:none"><h2>Set-based Neural Network Encoding Without Weight Tying</h2></a>
+		    <p><strong>Bruno Andreis</strong>, Soro Bedionita, Philip Torr, Sung Ju Hwang</p>
+		    <p>Conference on Neural Information Processing Systems</p>
+		    <p><b style='color:#8C001A;'>NeurIPS 2024 (To Appear)</b></p>
+                </div>
+            </div>
+	    
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/dw2ng.svg" alt="Publication 7">
+                </div>
+                <div class="pub-description">
+		    <a href="https://arxiv.org/abs/2402.18153" style="text-decoration:none"><h2>Diffusion-based Neural Network Weights Generation</h2></a>
+		    <p>Bedionita Soro*, <strong>Bruno Andreis*</strong>, Hayeon Lee*, Song Chong, Frank Hutter, Sung Ju Hwang</p>
+		    <p>Preprint</p>
+		    <p><b style='color:#8C001A;'>Arxiv</b></p>
+                </div>
+            </div>
+	    
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/umbc.svg" alt="Publication 6">
+                </div>
+                <div class="pub-description">
+		    <a href="https://arxiv.org/abs/2208.12401" style="text-decoration:none"><h2>Scalable Set Encoding with Universal Mini-Batch Consistency and Unbiased Full Set Gradient Approximation</h2></a>
+		    <p>Jeffrey Willette*, Seanie Lee*, <strong>Bruno Andreis</strong>, Kenji Kawaguchi, Juho Lee, Sung Ju Hwang</p>
+		    <p>International Conference on Machine Learning</p>
+		    <p><b style='color:#8C001A;'>ICML 2023</b></p>
+                </div>
+            </div>
 
-</frameset>
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/meta.svg" alt="Publication 5">
+                </div>
+                <div class="pub-description">
+		    <a href="https://arxiv.org/abs/2205.09990" style="text-decoration:none"><h2>Set-based Meta-Interpolation for Few-Task Meta-Learning</h2></a>
+		    <p>Seanie Lee*, <strong>Bruno Andreis*</strong>, Kenji Kawaguchi, Juho Lee, Sung Ju Hwang
+		    <p>Conference on Neural Information Processing Systems</p>
+		    <p><b style='color:#8C001A;'>NeurIPS 2022</b></p>
+                </div>
+            </div>
 
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/distortion.svg" alt="Publication 4">
+                </div>
+                <div class="pub-description">
+		  <a href="https://arxiv.org/abs/2206.09604" style="text-decoration:none"><h2>Distortion-Aware Network Pruning and Feature Reuse for Real-time Video Segmentation</h2></a>
+		    <p>Hyunsu Rhee, Dongchan Min, Sunil Hwang, <strong>Bruno Andreis</strong>, Sung Ju Hwang
+		    <p>Machine Learning for Autonomous Driving Workshop</p>
+		    <p><b style='color:#8C001A;'>NeurIPS 2022</b></p>
+                </div>
+            </div>
+
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/sss.svg" alt="Publication 3">
+                </div>
+                <div class="pub-description">
+		  <a href="https://arxiv.org/abs/2006.14222" style="text-decoration:none"><h2>Set Based Stochastic Subsampling</h2></a>
+		    <p><strong>Bruno Andreis</strong>, Seanie Lee, A. Tuan Nguyen, Juho Lee, Eunho Yang, Sung Ju Hwang</p>
+		    <p>International Conference on Machine Learning</p>
+		    <p><b style='color:#8C001A;'>ICML 2022</b></p>
+                </div>
+            </div>
 	
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/mbc.svg" alt="Publication 2">
+                </div>
+                <div class="pub-description">
+		  <a href="https://arxiv.org/abs/2103.01615" style="text-decoration:none"><h2>Mini-Batch Consistent Slot Set Encoder for Scalable Set Encoding</h2></a>
+		    <p><strong>Bruno Andreis</strong>, Jeffrey Willette, Juho Lee, Sung Ju Hwang</p>
+		    <p>Conference on Neural Information Processing Systems</p>
+		    <p><b style='color:#8C001A;'>NeurIPS 2021</b></p>
+                </div>
+            </div>
+	
+	    <div class="publication">
+                <div class="pub-image">
+                    <img src="images/dynamic.svg" alt="Publication 1">
+                </div>
+                <div class="pub-description">
+		  <a href="https://ieeexplore.ieee.org/document/8436727" style="text-decoration:none"><h2>Dynamic Detection-Tracking Switching</h2></a>
+		    <p><strong>Bruno Andreis</strong>, Junhyeon Park, Sung Ju Hwang, Minwoo Kim</p>
+		    <p>Tenth International Conference on Ubiquitous and Future Networks</p>
+		    <p><b style='color:#8C001A;'>ICUFN 2018</b></p>
+                </div>
+            </div>
+	
+            <!-- Add more publications as needed -->
+        </section>
+
+	<header>
+	  <h1>Contacts</h1>
+	</header>
+
+
+	<section id="contact" class="contact-section">
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="images/email-icon.png" alt="Email Icon">
+                <a href="mailto:andries@kaist.ac.kr">andries@kaist.ac.kr</a>
+            </div>
+            <div class="contact-item">
+                <img src="images/github-icon.png" alt="GitHub Icon">
+                <a href="https://github.com/AndreisBruno" target="_blank">https://github.com/AndreisBruno</a>
+            </div>
+            <div class="contact-item">
+                <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
+                <a href="https://www.linkedin.com/in/bruno-andreis-a0412268/" target="_blank">https://www.linkedin.com/in/bruno-andreis-a0412268/</a>
+            </div>
+        </div>
+	</section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 Bruno Andreis. All rights reserved.</p>
+    </footer>
+</body>
 </html>
