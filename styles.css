@@ -142,31 +142,6 @@ header, footer {
     margin-bottom: 8px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .publication {
-        flex-direction: column;
-        border: none; /* Remove border on smaller screens */
-        /* box-shadow: none; */
-    }
-
-    .pub-image {
-        flex: none;
-        width: 100%;
-        /* aspect-ratio: auto; */
-        max-height: 200px;
-    }
-
-    .pub-image img {
-        max-height: 200px;
-    }
-
-    /* Optional: Reduce padding on smaller screens */
-    .publications {
-        padding: 0 10px;
-    }
-}
-
 .contact-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -205,4 +180,51 @@ header, footer {
 
 .contact-item a:hover {
     text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publication {
+        flex-direction: column;
+        /*border: none; /* Remove border on smaller screens */
+	border: 1px solid #e0e0e0;    /* Optional: Light border for subtle separation */
+        /* box-shadow: none; */
+    }
+
+    .pub-image {
+        flex: none;
+        width: 100%;
+        aspect-ratio: auto; */
+        /*max-height: 200px;*/
+    }
+
+    .pub-image img {
+        max-height: 200px;
+    }
+
+    /* Optional: Reduce padding on smaller screens */
+    .publications {
+        padding: 0 10px;
+    }
+
+    .profile-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+    .profile-image {
+	margin-right: 0;
+	margin-bottom: 20px;
+    }
+
+    .profile-image img {
+                width: 100px;
+                height: 100px;
+            }
+
+    .profile-text{
+	max-width: 100%;
+    }
+
 }
