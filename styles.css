@@ -55,6 +55,7 @@ header, footer {
 
 .profile-container {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     max-width: 950px;          /* Limit the width of the container */
     margin: 0 auto;            /* Center the container horizontally */
@@ -63,9 +64,9 @@ header, footer {
 
 .profile-image img {
     width: 150px;              /* Fixed width for the profile picture */
-    height: 150px;             /* Fixed height to match width */
+    height: 190px;             /* Portrait crop for the profile picture */
     object-fit: cover;         /* Ensures the image fits the container */
-    border-radius: 50%;        /* Makes the image circular */
+    border-radius: 8px;        /* Softly rounded rectangular portrait */
 }
 
 .profile-text {
@@ -149,49 +150,132 @@ header, footer {
     margin-bottom: 8px;
 }
 
-.contact-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.contact-section:hover {
-    background-color: #e0e0e0;
-}
-
-.contact-info {
+.pub-links {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact-item img {
-    width: 24px;
-    height: 24px;
-}
-
-.contact-item a {
-    color: #007ACC;
+.pub-links a {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #8C001A;
+    border-radius: 4px;
+    color: #8C001A;
+    font-size: 0.9em;
     text-decoration: none;
 }
 
-.contact-item a:hover {
+.pub-links a:hover {
+    background-color: #8C001A;
+    color: #fff;
+}
+
+.pub-links a:focus-visible {
+    outline: 2px solid #8C001A;
+    outline-offset: 3px;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 950px;
+    margin: 0 auto 48px;
+    padding: 32px;
+    border: 1px solid #e7d8db;
+    border-left: 4px solid #8C001A;
+    border-radius: 12px;
+    background: linear-gradient(120deg, #fff, #f8eef0);
+    scroll-margin-top: 100px;
+}
+
+.contact-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-eyebrow {
+    margin-bottom: 8px;
+    color: #8C001A;
+    font-size: 0.75em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.contact-copy h2 {
+    margin-bottom: 10px;
+    color: #330704;
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    line-height: 1.25;
+}
+
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-section a {
+    text-decoration: none;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background-color: #8C001A;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-email:hover {
+    background-color: #650013;
+}
+
+.contact-address,
+.contact-socials a {
+    color: #650013;
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+}
+
+.contact-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.contact-address:hover,
+.contact-socials a:hover {
     text-decoration: underline;
 }
 
+.contact-section a:focus-visible {
+    outline: 2px solid #8C001A;
+    outline-offset: 4px;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .contact-email {
+        align-self: stretch;
+    }
+
     .publication {
         flex-direction: column;
         /*border: none; /* Remove border on smaller screens */
@@ -227,7 +311,7 @@ header, footer {
 
     .profile-image img {
                 width: 100px;
-                height: 100px;
+                height: 128px;
             }
 
     .profile-text{
