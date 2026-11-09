@@ -188,7 +188,7 @@ header, footer {
     border: 1px solid #e7d8db;
     border-left: 4px solid #8C001A;
     border-radius: 12px;
-    background: linear-gradient(120deg, #fff, #f8eef0);
+    background: linear-gradient(120deg, #e5e5e5, #d1d1d1);
     scroll-margin-top: 100px;
 }
 
